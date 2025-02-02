@@ -1,13 +1,14 @@
 ! Title: mylist-temp
-! Version: 1.41x+1
+! Version: 1.41x+2
 ! Description: yas
 
 
 ! new rules
+hasha.in###cf-turnstile
 ㅡ
 [$domain=/^www.torrentree\d+.site/]##.ad-cont-box
 [$domain=/^torrentssg\d+.com/]##li.item:has([target='_blank'])
-[$domain=/^torrentzota\d+.com/]##.px-2.gap-2.md:grid-cols-3.grid-cols-1.grid.max-w-7xl.w-full.mx-auto.container
+[$domain=/^torrentzota\d+.com/]##.px-2.gap-2.md\:grid-cols-3.grid-cols-1.grid.max-w-7xl.w-full.mx-auto.container
 [$domain=/^t\d+.torrentpi\d+.com/]##div.col-sm-12 > .widget-box > .basic-post-gallery
 [$domain=/^t\d+.torrentpi\d+.com/]##.clearfix > li:has([target='_blank'])
 
@@ -15,6 +16,7 @@
 
 ! quick fixes
 [$domain=/^t\d+.torrentpi\d+.com/]#@#.clearfix > li:nth-of-type(3)
+hasha.in##.bg-hasha-1-l.rounded.text.p-5 > div:has-text(/miyamoto muga|후타나리|고어|pulpawoelbo|pokemon|yeoljoo/)
 
 
 
