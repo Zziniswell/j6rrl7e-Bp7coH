@@ -1,10 +1,10 @@
 ! Title: mylist-temp
-! Version: 1.41x+2
+! Version: 1.41x+3
 ! Description: yas
 
 
 ! new rules
-hasha.in###cf-turnstile
+##[href^='https://xn--']:upward(1)
 ㅡ
 [$domain=/^www.torrentree\d+.site/]##.ad-cont-box
 [$domain=/^torrentssg\d+.com/]##li.item:has([target='_blank'])
