@@ -1,0 +1,39 @@
+! Title: mylist-temp
+! Version: 1.41x+1
+! Description: yas
+
+
+! new rules
+ㅡ
+[$domain=/^www.torrentree\d+.site/]##.ad-cont-box
+[$domain=/^torrentssg\d+.com/]##li.item:has([target='_blank'])
+[$domain=/^torrentzota\d+.com/]##.px-2.gap-2.md:grid-cols-3.grid-cols-1.grid.max-w-7xl.w-full.mx-auto.container
+[$domain=/^t\d+.torrentpi\d+.com/]##div.col-sm-12 > .widget-box > .basic-post-gallery
+[$domain=/^t\d+.torrentpi\d+.com/]##.clearfix > li:has([target='_blank'])
+
+
+
+! quick fixes
+[$domain=/^t\d+.torrentpi\d+.com/]#@#.clearfix > li:nth-of-type(3)
+
+
+
+! experimental
+||ohmynews.com^$cookie
+||ppomppu.co.kr^$cookie
+! ||acs.aliexpress.com/h5/mtop.aliexpress.member.web.login.guide/1.0/
+! ||acs.aliexpress.com/h5/mtop.aliexpress.usertouch.houyi.launchrule.runtime.pull/2.0/*jsonp
+
+
+
+! passive
+@@||arca.live^$extension="Auto Simya"
+@@||dcinside.com$cookie=_ga
+! fmkorea.com#%#window.addEventListener('load',function(){var e=0,t=setInterval(function(){var n=document.querySelector('.fa-ellipsis-h.fa');n?(clearInterval(t),n.click(),setTimeout(function(){var t=document.querySelector('.fa-eraser.fa');t&&t.click()},100)):5===++e&&clearInterval(t)},100)});
+
+
+
+! update regularly
+[$url=||m.dcinside.com/board/comic_new*?recommend=1]##.gall-detail-lst > li:not(:has-text(/번역|재업|트위터|단편|화|근황|스포|작가|결말|유출|만신|쿠보|엔딩|만붕|원본|박사장|리뷰|돚거|입양|부활|섹스/))
+m.dcinside.com##[id^='comment_cnt_']:has-text(/ual.kr|틱톡|틱,톡|틱.톡|dcinside.me|suri.li|테.무|테,무|♿|즉석당첨|즉,석|페.이|페,이|상,품|상.품|토막|샹품권|ㄱㅏ입|추쳔인|알,리|테mu|으햑!!|윤,하|kanokari|http:|윤하/)
+!
