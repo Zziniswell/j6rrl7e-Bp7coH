@@ -1,54 +1,24 @@
 ! Title: mylist-temp
-! Version: 1.41x+12
+! Version: 1.42x+0
 ! Description: yas
 
 
 ! new rules
-##[href^='https://xn--']:upward(1)
-webtoonguide.com##.ticket-banner
-signin.auction.co.kr###login-banner-box
-m.ruliweb.com##.line_deco_bottom.board_main > div.row
-lawtimes.co.kr#@#div[class*=" "] + div[class*=" "]:has(> div > a[target="_blank"][href^="https://"])
-@@||image.lawtimes.co.kr/ContentsImgs/Lawfirm/lawfirm
-~vivaldi.net##.btn-top
-~db.yugioh-card.com,~instiz.net##.btn_top
-~hogangnono.com##[class*='app-banner']
-mzgtoon.com##.w-full:has([src*='banner'])
-##[target='_blank']:has([src*='banner'])
-web.joongna.com##div:has(> ul:has([target='_black']))
-ㅡ
-[$domain=/^manatoki\d+.net/]##.clearfix > li:nth-of-type(5), .clearfix > li:nth-of-type(6)
-[$domain=/^newtoki\d+.com/]##.clearfix > li:nth-of-type(4), .clearfix > li:nth-of-type(5)
-[$domain=/^t\d+.torrentpi\d+.com/]##.clearfix > li:has([target='_blank'])
-[$domain=/^t\d+.torrentpi\d+.com/]##div.col-sm-12 > .widget-box > .basic-post-gallery
-[$domain=/^torrentssg\d+.com/]##li.item:has([target='_blank'])
-[$domain=/^torrentzota\d+.com/]##.px-2.gap-2.md\:grid-cols-3.grid-cols-1.grid.max-w-7xl.w-full.mx-auto.container
-[$domain=/^www.torrentree\d+.site/]##.ad-cont-box
 
 
 
 ! already added rules
-@@$stealth=useragent,app=org.mozilla.firefox|com.kiwibrowser.browser
-@@||apis.naver.com/whale/whale/icon$stealth=ip|useragent
-@@||icon.whale.naver.com/assets/$stealth=ip|useragent
-*##[href^='https://xn--']:upward(1)
-*##[target='_blank']:has([src*='banner'])
 
 
 
 ! quick fixes
-[$domain=/^t\d+.torrentpi\d+.com/]#@#.clearfix > li:nth-of-type(3)
-@@||dccdn11.dcinside.co.kr/viewimage.php
-web.joongna.com#@#main > div > div:has([alt='ad'])
 
 
 
 ! experimental
-||ohmynews.com^$cookie
-||ppomppu.co.kr^$cookie
 ! ||acs.aliexpress.com/h5/mtop.aliexpress.member.web.login.guide/1.0/
 ! ||acs.aliexpress.com/h5/mtop.aliexpress.usertouch.houyi.launchrule.runtime.pull/2.0/*jsonp
-||xn--$frame,doc,app=~com.android.vending|~com.sec.android.app.samsungapps|~dev.imranr.obtainium.fdroid|~com.adguard.android|~com.unicornsoft.android.unicornpro|~xyz.quaver.pupil|~xyz.project.violet|~com.mixplorer
+*##[target='_blank']:has([src*='banner']):upward(1)
 
 
 
@@ -61,10 +31,6 @@ web.joongna.com#@#main > div > div:has([alt='ad'])
 
 ! update regularly
 [$url=||m.dcinside.com/board/comic_new*?recommend=1]##.gall-detail-lst > li:not(:has-text(/번역|재업|트위터|단편|화|근황|스포|작가|결말|유출|만신|쿠보|엔딩|만붕|원본|박사장|리뷰|돚거|입양|부활|섹스/))
-hasha.in##.bg-hasha-1-l.rounded.text.p-5 > div:has-text(/miyamoto muga|후타나리|고어|pulpawoelbo|pokemon|yeoljoo/)
-m.dcinside.com##.gall-detail-lst > li:has-text(/메스이키|키작|상혁|상 혁|롤드컵|페이커|젠지|키170|섹카오|토막|사다새|♿|즉정|만삐|g i f|BJ|했제|벗 방|했●제|했■제|찐따폰|찐 따 폰|테무|테,무|테mu|틱,톡|테 무|공부많이|키168|키 168|168cm|av 찾는/)
-m.dcinside.com##[id^='comment_cnt_']:has(.txt:has-text(/ual.kr|틱톡|틱,톡|틱.톡|dcinside.me|suri.li|테.무|테,무|♿|즉석당첨|즉,석|페.이|페,이|상,품|상.품|토막|샹품권|ㄱㅏ입|추쳔인|알,리|테mu|으햑!!|윤,하|kanokari|http:|윤하|shorti|쿠폰팩|m.site|.me|전용:|₩|.top|xn--|할 인|알 리|특 가|네 페|20만원|네 이 버|윤 하|투표/))
-ㅡ
 m.dcinside.com##[id^='comment_cnt_']:has(.txt:has-text(/0WImO|010 3928 4468|010-3928-4468|1치킨|2ymR9qLIMiE?si=9egxHvGOEekozS4j|2ymR9qLIMiE?si=56DutilnmBjQ5gYs|3c5.com|3v44|3VVTV|3만원권|4get|5du|5gxJiqCB|5h7XAFI|5HCWK6|5MBgn4FPH5c|7bts.com|7SEjaRXIe57UJDYX|9DGIARyxwl4|9k.gg|9qr.de|20만원|24cx|24w2uvj|31사단|33u.cn|241Bd2y|450원|600원|650원|585559|10553623|콘$서$트|.ax|.me|.top|=앱 다운 즉시|@ 빼고 접속|@ 빼고접속|@빼고 접속|@빼고접속|abit.ly|abrir|aceinfo|Adf.ly|adsld.link|adslid.link|ai6.net|alias.live|alicodekorea|aliepxr|aliexpress|aliwintersale|ani1_new2|animator|antiminju|ap.lc|apply.do|aqz.kr|asq.kr|av신작|baas.kr|bananam.net|baro.flyurl.net|baro.lk|bctbcb.com|best-trust.asia|bit.do|bit.ly|bitly|BJ방송|bkjiso.shop|bl.ink|bltly|bQCWWksU9B4|buff.ly|buzurl.com|by2.io|by.com|byrl.me|c11.kr|campaign.do|causdroel|CB16W0U-MiA|ckierun|clck.ru|cleanuri.com|clk.im|cor.as.Furyito.mxels2-comsmarturttrim|CRLFJG|Crlfjg|cs_new1.10553623|csi|cutecat99|cutt|cutt.ly|cutt.us|cyclee.shop/))
 m.dcinside.com##[id^='comment_cnt_']:has(.txt:has-text(/dating.go|daumo.shop|dcinside.me|dcwithin.link|di.do|discordtopguild|donate.do|downbe|dudtjd|dudtjd466|.어ㅓ.어ㅏ|dy.com­|EgGj|expayback|exx.us|feednow.link|filebogo|flyurl.net|FmTdAU6P|funding.do|fw.sg|gg.gg|gitshort.com|goo.by|goo.su|goolnk.com|gourl.kr|govil|grabify|GS25|gunmabada.com|han.gl|hana.icu|happyplanter|hbr.tc|healingup|hello-dm|hf|hide.su|hideuri.com|hlbam1.com|hsnww|http:|humorin.online|humornamu.site|i.nk|iamsolo|idoldawana|ieej|iguw|ilbe|ili.im|Inkiy.com|Innk.in|insidewy.com|insidewy.online|Ir.kr|is.gd|issuya.shop|itlogfit|itsssl.com|ity.im|ix.sk|IZnI_5uOShI|i᠍eej|i᠍eej.lv|j.mp|jkUFHwE|jpeg.ly|jpeg.lysniply.io|jusotrip.com|kaedekarean|kanokari|kbank|ko.gl|koe.kr|kokomong|kopis|kr.pe|krll|kro.kr|kzow|lanza.me|leagueof|minlink.gy|minlinkshortner.net|minlinktr.ee|minlnk|minlnnk.in|minloanscan.net|minlove.withyou|minlovelove.you|minLUV3737|minlWKduP64f2U|minlm11.kr|minlm.site|minlm.site.naver|minlmaddago.com|minlmarket_info|minlmca9/))
 m.dcinside.com##[id^='comment_cnt_']:has(.txt:has-text(/mcaf.ee|meba.link|meet2.kr|mini.me|miniurl.cl|mkdf.fun|mma|moy.kr|muz.so|myagit.xyz|mysl|n9.cl|nkbada.com|novel20.xyz|novelagit.xyz|novelfree|noxlink|nuly.do|nurl|nyaa.si|oa.to|oasisfeed|online7game|onlyl᠍inks|orll|Os4d9PS0XTs|owry|Padgi|pixelfy.me|plus-2070|PNJZX|polr.me|ppt|pTCYI5jrEa|purl.co.kr|q.bc.vc|qr.net|rb.gy|readmore.do|readmore.doNhj9788|rebrand.ly|rebrandly.com|recut.in|ref4295459|replug.io|reurl.cc|reurl.kr|rl.c|roqn001|rotf.lol|RRRRRRRRRRRRRRRRRRRRR|s4ya|s.id|s.uconn.edu|sa.le|sdvx|sher.kro.kr|shiny.link|shlink.io|sho.rt|short.gy|short.io|short.rip|shorter|shorti|shortn|shorturl.ae|shorturl.at|shrtco.de|shrtn|si=xBGP7YCKIgeXHzMN|skrat|smarturl.it|snip.ly|SO77X4BM_1w|soc.link|sou.kr|ssadafile|sshm|sshm3629|su.pr|suo|suri.li|surl|minli.li|minsYsHsekbd4o|minlt2m.kr|minlt2424|minlt.co|minlt.ly|minltcp.pw|minlteemu|minltemu|minltest.loagg|minltictok|minltik|minltiny.cc|minltiny.ie|minltinyurl.com|minltny.im/))
