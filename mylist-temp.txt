@@ -1,5 +1,5 @@
 ! Title: mylist-temp
-! Version: 1.41x+10
+! Version: 1.41x+11
 ! Description: yas
 
 
@@ -46,7 +46,6 @@ lawtimes.co.kr#@#div[class*=" "] + div[class*=" "]:has(> div > a[target="_blank"
 ! ||acs.aliexpress.com/h5/mtop.aliexpress.member.web.login.guide/1.0/
 ! ||acs.aliexpress.com/h5/mtop.aliexpress.usertouch.houyi.launchrule.runtime.pull/2.0/*jsonp
 ||xn--$frame,doc,app=~com.android.vending|~com.sec.android.app.samsungapps|~dev.imranr.obtainium.fdroid|~com.adguard.android|~com.unicornsoft.android.unicornpro|~xyz.quaver.pupil|~xyz.project.violet|~com.mixplorer
-$$script:has-text(Math.random)
 
 
 
